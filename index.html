@@ -750,7 +750,7 @@ function renderCommon(){
   // the pivot timeline
   $("pivot-rail").innerHTML = (COMMON.journey||[]).map(j=>`
     <div class="pnode ${esc(j.side)}${j.pivot?" pivot":""}">
-      <div class="dot"></div>
+      <div class="dot"></div
       <div class="meta"><div class="yr">${esc(j.year)}</div><div class="lbl">${esc(j.title)}</div>${j.pivot?`<span class="ptag">The pivot</span>`:""}</div>
     </div>`).join("");
 
